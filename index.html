@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Formulário Cadastro</title>
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="bg-hero">
+        <div class="text-hero">
+          <h1>Cadastrar</h1>
+          <p>Já possue um cadastro? <a href="#">Login</a></p>
+        </div>
+      </div>
+      <div class="form">
+        <form id="form">
+          <div class="form-control">
+            <label for="usuario">Usuário:</label>
+            <div class="input-control">
+              <i class="bi bi-person"></i>
+              <input
+                type="text"
+                id="usuario"
+                placeholder="Digite seu usuário"
+              />
+            </div>
+            <span class="msg">O usuário deve ter no mínimo 3 caracteres.</span>
+          </div>
+
+          <div class="form-control">
+            <label for="email">E-mail:</label>
+            <div class="input-control">
+              <i class="bi bi-envelope"></i>
+              <input type="email" id="email" placeholder="Digite seu e-mail" />
+            </div>
+            <span class="msg">Digite um e-mail válido.</span>
+          </div>
+
+          <div class="form-control">
+            <label for="password">Senha:</label>
+            <div class="input-control">
+              <i class="bi bi-lock"></i>
+              <input
+                type="password"
+                id="password"
+                placeholder="Digite sua senha"
+              />
+            </div>
+            <span class="msg">A senha deve ter no mínimo 6 caracteres.</span>
+          </div>
+
+          <div class="form-control">
+            <label for="confirmPassword">Confirmar Senha:</label>
+            <div class="input-control">
+              <i class="bi bi-lock"></i>
+              <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Digite sua senha novamente"
+              />
+            </div>
+            <span class="msg">As senhas não conferem.</span>
+          </div>
+
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
