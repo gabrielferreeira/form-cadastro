@@ -15,11 +15,15 @@
       <div class="bg-hero">
         <div class="text-hero">
           <h1>Cadastrar</h1>
-          <p>Já possue um cadastro? <a href="#">Login</a></p>
+          <p>
+            Já possue um cadastro?
+            <a title="Fazer login" href="#">Faça login</a>
+          </p>
         </div>
       </div>
       <div class="form">
         <form id="form">
+          <h2>Cadastrar</h2>
           <div class="form-control">
             <label for="usuario">Usuário:</label>
             <div class="input-control">
@@ -30,7 +34,7 @@
                 placeholder="Digite seu usuário"
               />
             </div>
-            <span class="msg">O usuário deve ter no mínimo 3 caracteres.</span>
+            <span class="msg">O campo usuário é obrigatório.</span>
           </div>
 
           <div class="form-control">
@@ -68,7 +72,8 @@
             <span class="msg">As senhas não conferem.</span>
           </div>
 
-          <button type="submit">Cadastrar</button>
+          <button title="Cadastrar" type="submit">Cadastrar</button>
+          <p>Já tem uma conta? <a href="#">Faça login</a></p>
         </form>
       </div>
     </div>

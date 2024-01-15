@@ -23,6 +23,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: var(--bgColorBlue);
+  padding: 0 2%;
 }
 
 .conteiner {
@@ -82,7 +83,7 @@ body {
 }
 
 .conteiner .form form {
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .conteiner .form form,
@@ -154,4 +155,47 @@ body {
 
 .conteiner .form form button:hover {
   opacity: 0.9;
+}
+
+.conteiner .form form h2,
+.conteiner .form form p {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .conteiner {
+    height: 570px;
+  }
+
+  .conteiner .bg-hero {
+    display: none;
+  }
+
+  .conteiner .form {
+    width: 100%;
+  }
+
+  .conteiner .form form h2,
+  .conteiner .form form p {
+    display: block;
+  }
+
+  .conteiner .form form h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--fonteColorDark);
+  }
+
+  .conteiner .form form p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--fonteColorDark);
+  }
+
+  .conteiner .form form p a {
+    color: var(--bgColorBlue);
+    text-decoration: none;
+  }
 }
