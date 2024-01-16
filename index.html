@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Formulário, Cadastrar, Login" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -25,7 +26,7 @@
         <form id="form">
           <h2>Cadastrar</h2>
           <div class="form-control">
-            <label for="usuario">Usuário:</label>
+            <label for="usuario">Usuário: *</label>
             <div class="input-control">
               <i class="bi bi-person"></i>
               <input
@@ -34,11 +35,11 @@
                 placeholder="Digite seu usuário"
               />
             </div>
-            <span class="msg">O campo usuário é obrigatório.</span>
+            <span class="msg"></span>
           </div>
 
           <div class="form-control">
-            <label for="email">E-mail:</label>
+            <label for="email">E-mail: *</label>
             <div class="input-control">
               <i class="bi bi-envelope"></i>
               <input type="email" id="email" placeholder="Digite seu e-mail" />
@@ -47,7 +48,7 @@
           </div>
 
           <div class="form-control">
-            <label for="password">Senha:</label>
+            <label for="password">Senha: *</label>
             <div class="input-control">
               <i class="bi bi-lock"></i>
               <input
@@ -60,7 +61,7 @@
           </div>
 
           <div class="form-control">
-            <label for="confirmPassword">Confirmar Senha:</label>
+            <label for="confirmPassword">Confirmar Senha: *</label>
             <div class="input-control">
               <i class="bi bi-lock"></i>
               <input
@@ -69,7 +70,7 @@
                 placeholder="Digite sua senha novamente"
               />
             </div>
-            <span class="msg">As senhas não conferem.</span>
+            <span class="msg">As senhas não são iguais.</span>
           </div>
 
           <button title="Cadastrar" type="submit">Cadastrar</button>
