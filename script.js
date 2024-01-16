@@ -10,6 +10,7 @@ form.addEventListener("submit", (event) => {
   checkForm();
 });
 
+// FUNÇÃO PARA OCUTAR O ERRO APÓS CLICAR FORA DO INPUT
 user.addEventListener("blur", () => {
   checkUser();
 });
@@ -22,6 +23,11 @@ password.addEventListener("blur", () => {
   checkPassword();
 });
 
+confirmPassword.addEventListener("blur", () => {
+  checkConfirmPassword();
+});
+
+// FUNÇÃO PARA CHECAR O CAMPO DE USUÁRIO
 function checkUser() {
   const userValue = user.value;
 
@@ -33,6 +39,7 @@ function checkUser() {
   }
 }
 
+// FUNÇÃO PARA CHECAR O CAMPO DE E-MAIL
 function checkEmail() {
   const emailValue = email.value;
 
@@ -44,6 +51,7 @@ function checkEmail() {
   }
 }
 
+// FUNÇÃO PARA CHECAR O CAMPO DE SENHA
 function checkPassword() {
   const passwordValue = password.value;
 
@@ -57,6 +65,7 @@ function checkPassword() {
   }
 }
 
+// FUNÇÃO PARA CHECAR O CAMPO DE CONFIRMAR SENHA
 function checkConfirmPassword() {
   const passwordValue = password.value;
   const confirmPasswordValue = confirmPassword.value;
@@ -71,6 +80,7 @@ function checkConfirmPassword() {
   }
 }
 
+// FUNÇÃO PARA CHECAR OS CAMPOS DO FORMULÁRIO
 function checkForm() {
   checkUser();
   checkEmail();
@@ -87,10 +97,11 @@ function checkForm() {
     alert("Usuário cadastrado com sucesso.");
     clearInputs();
   } else {
-    alert("Todos os compos são obrigatórios.");
+    alert("Preencha as informações corretamentes.");
   }
 }
 
+// FUNÇÃO PARA LIMPAR OS CAMPOS APÓS ENVIAR AS INFORMAÇÕES CORRETAS
 function clearInputs() {
   user.value = "";
   email.value = "";
@@ -98,6 +109,7 @@ function clearInputs() {
   confirmPassword.value = "";
 }
 
+// FUNÇÃO PARA EXIBIR ERRO NOS CAMPOS DE INPUTS
 function inputError(input, message) {
   const formItem = input.parentElement.parentElement;
   const msgItem = formItem.querySelector("span");

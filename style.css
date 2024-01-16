@@ -14,7 +14,6 @@
   --fonteColorDark: #262626;
   --fonteColorGray: #aaa;
   --fonteColorRed: #ff0000;
-  --fonteColorGreen: #00a884;
 }
 
 body {
@@ -165,6 +164,7 @@ body {
   display: none;
 }
 
+/* VALIDAÇÃO DE ERRO */
 .conteiner .form form .form-control.error .input-control {
   border: 2px solid var(--fonteColorRed);
 }
@@ -178,6 +178,7 @@ body {
   color: var(--fonteColorRed);
 }
 
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
   .conteiner {
     height: 550px;
